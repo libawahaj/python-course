@@ -6,10 +6,7 @@ def r(a,b):
     c = a + b
     return c 
 
-a = 5
-b = 10
-
-print(r(a,b))
+r(5,10)
 
 #continue
 
