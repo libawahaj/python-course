@@ -1,9 +1,16 @@
-#square values of the numbers in a list
+#user input the list
 
-numbers = [1, 2, 3, 4, 5]
+numbers = []
+n = int(input("Enter number of elements: "))
+for i in range (0, n):
+    num = int(input("Enter one of the numbers in your list: "))
+    numbers.append(num)
+
 squaredlist = []
 
-print("The numbers in a list are: ", numbers)
+print("The numbers in your list are: ", numbers)
+
+#square values of the numbers in a list
 
 for singleNumber in numbers:
     squared = singleNumber ** 2
@@ -12,6 +19,7 @@ for singleNumber in numbers:
 print("The square values for the list of numbers are: ", squaredlist)
 
 #dividing the list into odd and even 
+
 evenList = []
 oddList = []
 
