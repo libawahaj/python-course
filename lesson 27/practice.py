@@ -6,7 +6,7 @@ class Students:
 
 s1 = Students()
 
-#creating the methods and attributes and accessing them outside of the class
+#method 1: creating the methods and attributes and accessing them outside of the class
 
 class Students2:
 
@@ -22,7 +22,7 @@ s2 = Students2("Sam", 17)
 
 s2.print_details()
 
-#accessing the attributes outside of the class
+#method 2: accessing the attributes outside of the class
 
 class Students3:
 
@@ -32,5 +32,9 @@ class Students3:
 
 
 s3 = Students3("Umar", 10)
+s4 = Students3("Jack", 26)
 print(s3.name)
 print(s3.age)
+
+print(s4.name)
+print(s4.age)
