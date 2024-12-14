@@ -1,22 +1,21 @@
 class Vehicle:
-
+    
     def __init__(self, seating_capacity):
-        self.seating_capacity = seating_capacity
+        self.seating_capacity = seating_capacity  
 
     def fare(self):
-        return self.seating_capacity * 100
+        return self.seating_capacity * 100  
     
 class Bus(Vehicle):
 
-    def __init__(self, maint_charge):
-        self.maint_charge = maint_charge
+    def __init__(self, seating_capacity):
+        super().__init__(seating_capacity)  
 
-        
     def totalfare(self):
-        Vehicle.__init__(self, self.seating_capacity)
-        initialFare = super().fare()
-        self.maint_charge = 0.1 * initialFare
-        return self.maint_charge + self.maint_charge
+        inital_fare = super().fare()  
+        maint_charge = 0.1 * inital_fare  
+        return inital_fare + maint_charge  
     
+
 vehicle = Bus(50)
-print(vehicle.totalfare())
+print(vehicle.totalfare())  
