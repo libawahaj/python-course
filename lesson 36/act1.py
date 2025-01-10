@@ -9,7 +9,7 @@ FONT_SIZE = 72
 pygame.init()
 
 # Load background image
-background_image = pygame.transform.scale(pygame.image.load('bg.jpg'), (screen_width, screen_height))
+background_image = pygame.display.set_mode((screen_width, screen_height))
 
 # Font
 font = pygame.font.SysFont('Times New Roman', FONT_SIZE)
