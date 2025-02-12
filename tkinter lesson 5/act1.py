@@ -9,7 +9,7 @@ def toplevel():
     toplevel.title("Top Level Window")
     toplevel.geometry("200x200")
 
-    l1 = Label(toplevel,text="This is the top level window", bg= 'grey', fg='blue')
+    l1 = Label(toplevel,text="This is the top level window", bg= 'lightgrey', fg='black')
     l1.pack()
 
     toplevel.mainloop()
